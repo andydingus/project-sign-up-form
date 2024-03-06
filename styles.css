@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "Electroharmonix";
+  src: url("fonts/electroharmonix.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.sidebar,
+.form-content {
+  font-family: "Electroharmonix";
+}
+
+.container {
+  display: flex;
+  border: 2px solid black;
+  width: 1000px;
+  height: 1000px;
+}
+
+.sidebar {
+  position: relative;
+  flex-grow: 1;
+  background-image: url(images/sakura-banner.jpg);
+}
+
+.form-content {
+  flex-grow: 2;
+  background-color: blue;
+}
+
+.logo {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 20%;
+
+  /* Font styles */
+  font-size: 3rem;
+  color: white;
+
+  /* Flex styles */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.credits {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: absolute;
+  bottom: 0px;
+  font-size: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.credits a,
+.credits a:visited {
+  color: black;
+}
+
+/* .logo img {
+  width: 90px;
+  height: auto;
+} */
