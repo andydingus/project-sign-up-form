@@ -31,7 +31,40 @@
         </div>
       </div>
       <div class="form-content">
-        <form action="index.html" method="post"></form>
+        <div class="ad-text">
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up now
+          to get started. <br /><br />You know you want to.
+        </div>
+        <form action="index.html" method="post">
+          <fieldset>
+            <legend>Let's do this!</legend>
+
+            <label for="first-name">First name</label>
+            <input type="text" name="first-name" id="first-name" />
+
+            <label for="last-name">Last name</label>
+            <input type="text" name="last-name" id="last-name" />
+
+            <label for="e-mail">Email</label>
+            <input type="email" name="e-mail" id="e-mail" />
+
+            <label for="phone-number">Phone Number</label>
+            <input type="tel" name="phone-number" id="phone-number" />
+
+            <label for="user-password">Password</label>
+            <input type="password" name="user-password" id="user-password" />
+
+            <label for="confirm-password">Confirm Password</label>
+            <input
+              type="password"
+              name="confirm-user-password"
+              id="confirm-password"
+            />
+          </fieldset>
+          <button type="submit">Create Account</button>
+        </form>
+        <div>Already have an account? <a href="">Log in</a></div>
       </div>
     </div>
   </body>

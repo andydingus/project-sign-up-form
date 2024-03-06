@@ -5,8 +5,7 @@
   font-style: normal;
 }
 
-.sidebar,
-.form-content {
+.sidebar .logo {
   font-family: "Electroharmonix";
 }
 
@@ -19,13 +18,17 @@
 
 .sidebar {
   position: relative;
-  flex-grow: 1;
+  /* flex-grow: 1; */
+  width: 333px;
   background-image: url(images/sakura-banner.jpg);
 }
 
 .form-content {
-  flex-grow: 2;
-  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  width: 667px;
+  /* flex-grow: 2; */
+  background-color: white;
 }
 
 .logo {
