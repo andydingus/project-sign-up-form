@@ -5,6 +5,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .sidebar .logo {
   font-family: "Electroharmonix";
 }
@@ -19,16 +26,18 @@
 .sidebar {
   position: relative;
   /* flex-grow: 1; */
-  width: 333px;
+  width: 33%;
   background-image: url(images/sakura-banner.jpg);
 }
 
 .form-content {
   display: flex;
   flex-direction: column;
-  width: 667px;
+  width: 67%;
   /* flex-grow: 2; */
-  background-color: white;
+  background-color: lightpink;
+  margin-left: 14px;
+  font-family: "Roboto", sans-serif;
 }
 
 .logo {
@@ -71,7 +80,15 @@ textarea {
   font-size: 100%;
 }
 
+fieldset {
+  border: 0;
+  padding: 0.01em 0 0 0;
+  margin: 0;
+  min-width: 0;
+}
+
 button {
+  appearance: none;
   width: 150px;
 }
 
@@ -82,13 +99,21 @@ form {
 }
 
 .ad-text {
-  margin: 20% 0 13% 14px;
+  /* margin: 20% 0 13% 14px; */
+  height: 33%;
+  display: flex;
+}
+
+.ad-text p {
+  align-self: flex-end;
+
+  font-size: 1.5em;
 }
 
 fieldset {
   position: relative;
   border-style: none;
-  margin: 0;
+  margin: 10% 0 10% 0;
 }
 
 form legend {
@@ -98,9 +123,14 @@ form legend {
 .account-section {
   display: flex;
   flex-direction: column;
-  padding-left: 14px;
 }
 
+button[type="submit"] {
+  border-radius: 10px;
+  border-color: white;
+  padding: 10px 5px;
+  background-color: #e9b9a5;
+}
 /* .logo img {
   width: 90px;
   height: auto;
