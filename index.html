@@ -7,68 +7,92 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Project: Sign-up Form</h1>
+    <div class="centered">
+      <h1>Project: Sign-up Form</h1>
 
-    <div class="container">
-      <div class="sidebar">
-        <div class="logo">
-          SAKURA
-          <img src="images/sakura-icon.png" alt="" />
-        </div>
-        <div class="credits">
-          <p>
-            Photo by
-            <a
-              href="https://unsplash.com/@xianyuhao?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-              >Xianyu hao</a
-            >
-            on
-            <a
-              href="https://unsplash.com/photos/brown-tree-with-white-flowers-during-daytime-Ml8WeLdCnRU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-              >Unsplash</a
-            >
-          </p>
-        </div>
-      </div>
-      <div class="form-content">
-        <form action="index.html" method="post">
-          <div class="ad-text">
+      <div class="container">
+        <div class="sidebar">
+          <div class="logo">
+            SAKURA
+            <img src="images/sakura-icon.png" alt="" />
+          </div>
+          <div class="credits">
             <p>
-              This is not a real online service! You know you need something
-              like this in your life to help you realize your deepest dreams.
-              Sign up now to get started. <br /><br />You know you want to.
+              Photo by
+              <a
+                href="https://unsplash.com/@xianyuhao?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                >Xianyu hao</a
+              >
+              on
+              <a
+                href="https://unsplash.com/photos/brown-tree-with-white-flowers-during-daytime-Ml8WeLdCnRU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                >Unsplash</a
+              >
             </p>
           </div>
-          <fieldset>
-            <legend>Let's do this!</legend>
+        </div>
+        <div class="form-content">
+          <form action="index.html" method="post">
+            <div class="ad-text">
+              <p>
+                This is not a real online service! You know you need something
+                like this in your life to help you realize your deepest dreams.
+                Sign up now to get started. <br /><br />You know you want to.
+              </p>
+            </div>
+            <div class="input-block">
+              <fieldset>
+                <legend>Let's do this!</legend>
 
-            <label for="first-name">First name</label>
-            <input type="text" name="first-name" id="first-name" />
+                <div class="column one">
+                  <div class="first-name">
+                    <label for="first-name">First name</label>
+                    <input type="text" name="first-name" id="first-name" />
+                  </div>
 
-            <label for="last-name">Last name</label>
-            <input type="text" name="last-name" id="last-name" />
+                  <div class="e-mail">
+                    <label for="e-mail">Email</label>
+                    <input type="email" name="e-mail" id="e-mail" />
+                  </div>
 
-            <label for="e-mail">Email</label>
-            <input type="email" name="e-mail" id="e-mail" />
+                  <div class="user-password">
+                    <label for="user-password">Password</label>
+                    <input
+                      type="password"
+                      name="user-password"
+                      id="user-password"
+                    />
+                  </div>
+                </div>
 
-            <label for="phone-number">Phone Number</label>
-            <input type="tel" name="phone-number" id="phone-number" />
+                <div class="column two">
+                  <div class="last-name">
+                    <label for="last-name">Last name</label>
+                    <input type="text" name="last-name" id="last-name" />
+                  </div>
 
-            <label for="user-password">Password</label>
-            <input type="password" name="user-password" id="user-password" />
+                  <div class="phone-number">
+                    <label for="phone-number">Phone Number</label>
+                    <input type="tel" name="phone-number" id="phone-number" />
+                  </div>
 
-            <label for="confirm-password">Confirm Password</label>
-            <input
-              type="password"
-              name="confirm-user-password"
-              id="confirm-password"
-            />
-          </fieldset>
-          <div class="account-section">
-            <button type="submit">Create Account</button>
-            <p>Already have an account? <a href="">Log in</a></p>
-          </div>
-        </form>
+                  <div class="confirm-password">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input
+                      type="password"
+                      name="confirm-user-password"
+                      id="confirm-password"
+                    />
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+            <div class="account-section">
+              <button type="submit">Create Account</button>
+              <p>Already have an account? <a href="">Log in</a></p>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </body>
