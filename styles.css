@@ -1,3 +1,4 @@
+/* Font faces */
 @font-face {
   font-family: "Electroharmonix";
   src: url("fonts/electroharmonix.otf");
@@ -8,6 +9,20 @@
 @font-face {
   font-family: "Roboto";
   src: url("fonts/Roboto-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Kiwi Maru Medium";
+  src: url("fonts/Kiwi_Maru/KiwiMaru-Medium.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Kiwi Maru Regular";
+  src: url("fonts/Kiwi_Maru/KiwiMaru-Regular.ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -43,7 +58,7 @@
   width: 67%;
   /* flex-grow: 2; */
   /* margin-left: 14px; */
-  font-family: "Roboto", sans-serif;
+  font-family: "Kiwi Maru Regular", sans-serif;
 }
 
 .logo {
@@ -113,12 +128,16 @@ form {
 
 .ad-text p {
   align-self: flex-end;
-
   font-size: 1.5em;
+}
+
+.ad-text span {
+  font-family: "Kiwi Maru Medium", sans-serif;
 }
 
 .input-block {
   background-color: #ede0dd;
+  box-shadow: 0 10px 20px #ede0dd;
 }
 
 fieldset {
@@ -133,11 +152,16 @@ fieldset {
 fieldset input {
   width: 150px;
   border-style: none;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 fieldset input:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  outline: 2px solid #e9b9a5;
+}
+
+fieldset input:focus {
+  background-color: white;
+  outline: 2px solid blue;
 }
 
 /* Row styles */
@@ -175,6 +199,7 @@ form legend {
 .account-section {
   display: flex;
   flex-direction: column;
+  padding-top: 20px;
 }
 
 button[type="submit"] {
