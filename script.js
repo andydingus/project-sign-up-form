@@ -8,10 +8,10 @@ confirmPassword.onkeyup = function () {
   if (confirmPassword.value == userPassword.value) {
     // Style the boxes to show they don't match
     confirmPassword.style.outline = "2px solid green";
-    message.textContent = "Matching";
+    message.textContent = "Matching 👍";
   } else if (confirmPassword.value != userPassword.value) {
     confirmPassword.style.outline = "2px solid red";
-    message.textContent = "Not Matching";
+    message.textContent = "Not Matching 👎";
   }
 };
 
