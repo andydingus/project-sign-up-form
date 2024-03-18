@@ -164,6 +164,16 @@ fieldset input:focus {
   outline: 2px solid blue;
 }
 
+.confirm-password {
+  position: relative;
+}
+
+#message {
+  position: absolute;
+  top: 30px;
+  right: 0px;
+}
+
 /* Row styles */
 .column div {
   display: flex;

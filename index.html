@@ -32,7 +32,7 @@
           </div>
         </div>
         <div class="form-content">
-          <form action="index.html" method="post">
+          <form action="index.html" method="post" id="signupForm">
             <div class="ad-text">
               <p>
                 Join us for the annual cherry blossom viewing! Cherry blossoms
@@ -48,7 +48,12 @@
                 <div class="column one">
                   <div class="first-name">
                     <label for="first-name">First name</label>
-                    <input type="text" name="first-name" id="first-name" />
+                    <input
+                      type="text"
+                      name="first-name"
+                      id="first-name"
+                      required
+                    />
                   </div>
 
                   <div class="e-mail">
@@ -62,6 +67,7 @@
                       type="password"
                       name="user-password"
                       id="user-password"
+                      required
                     />
                   </div>
                 </div>
@@ -69,7 +75,12 @@
                 <div class="column two">
                   <div class="last-name">
                     <label for="last-name">Last name</label>
-                    <input type="text" name="last-name" id="last-name" />
+                    <input
+                      type="text"
+                      name="last-name"
+                      id="last-name"
+                      required
+                    />
                   </div>
 
                   <div class="phone-number">
@@ -83,7 +94,9 @@
                       type="password"
                       name="confirm-user-password"
                       id="confirm-password"
+                      required
                     />
+                    <span id="message"></span>
                   </div>
                 </div>
               </fieldset>
